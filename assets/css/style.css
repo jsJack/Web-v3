@@ -1,0 +1,129 @@
+* {
+    --var-color-grad-left: #F670F8;
+    --var-color-grad-right: #B061ED;
+
+    --var-color-ios-dark: #2C2C2E;
+    --var-color-ios-darker: #1C1C1E;
+
+    --var-color-text-darkest: #636366;
+    --var-color-text-action: #0A84FF;
+    --var-color-text-muted: #8E8E93;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url("../font/sf-pro-display-bold.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+    font-family: 'SFProDisplay', sans-serif;
+    box-sizing: border-box;
+
+    color: white;
+}
+
+.fullheight {
+    height: 100vh;
+    width: 100vw;
+
+    &.dark {
+        background: var(--var-color-ios-dark);
+    }
+
+    &.darker {
+        background: var(--var-color-ios-dark-2);
+    }
+}
+
+.hero-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-links {
+    gap: 25px;
+}
+
+.title {
+    font-size: 96px;
+}
+
+.text-verymuted {
+    color: var(--var-color-text-darkest);
+    font-size: 15px;
+
+    &.larger {
+        font-size: 32px;
+    }
+}
+
+.gradient {
+    background: linear-gradient(90deg, var(--var-color-grad-left), var(--var-color-grad-right));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-col-vm {
+    color: var(--var-color-text-darkest);
+}
+
+.wave {
+    animation-name: teeter;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.typewriter {
+    &.typer {
+        /* flashing animation between 0% and 100% transparency */
+        animation: blink 1.5s infinite;
+    }
+}
+
+@keyframes teeter {
+
+    /* 0% { } */
+    33% {
+        transform: translate(-7%, 0) rotate(-9deg);
+    }
+
+    66% {
+        transform: translate(-5%, 0) rotate(4deg);
+    }
+
+    66% {
+        transform: translate(7%, 0) rotate(9deg);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
