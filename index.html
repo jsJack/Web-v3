@@ -12,38 +12,81 @@
 
 <body class="flex-col">
     <div id="1-landing" class="fullheight dark flex-col"
-        style="align-items: center; justify-content: center; padding-bottom: 15vw;">
-        <div class="flex-col" style="justify-content: space-between;">
+        style="align-items: center; justify-content: center; justify-content: space-between; padding-top: 10vh;">
+        <div class="flex-col">
             <div class="flex-col" style="align-items: flex-start;">
-                <img src="assets/img/icon/wave.svg" alt="wave" style="width: 130px; margin: 0;" class="wave">
+                <img src="assets/img/icon/wave.svg" alt="wave" style="width: 100px; margin: 0;" class="wave">
                 <div style="display: flex; margin: 0;">
                     <h1 class="title" style="margin: 0;">Hey, I'm Jack.</h1>
-                    <p class="text-verymuted" style="margin: 0; align-self: flex-end; margin-left: 15px; padding-bottom: 25px;">(19yo,
+                    <p class="text-verymuted"
+                        style="margin: 0; align-self: flex-end; margin-left: 15px; padding-bottom: 25px;">(19yo,
                         United
                         Kingdom)</p>
                 </div>
-                <h1 class="title" style="margin: 0;"><span class="gradient" id="typewriter">Software Engineer</span><span
-                        class="typewriter typer text-col-vm">_</span></h1>
+                <h1 class="title" style="margin: 0;"><span class="gradient" id="typewriter">Software
+                        Engineer</span><span class="typewriter typer text-col-vm">_</span></h1>
                 <div class="flex-row hero-links" style="align-self: center; padding-top: 45px;">
-                    <a href="https://discord.com/users/324596012955992065" target="_blank" rel="noreferrer nofollow"><img
-                            src="assets/img/cta/discord.svg" alt="CTA Discord" class="hero-icon"></a>
-                    <a href="mailto:hello@jackperry.co" target="_blank" rel="noreferrer nofollow"><img src="assets/img/cta/mail.svg"
-                            alt="CTA Mail" class="hero-icon"></a>
-                    <a href="https://github.com/jsJack" target="_blank" rel="noreferrer nofollow"><img src="assets/img/cta/github.svg"
-                            alt="CTA GitHub" class="hero-icon"></a>
-                    <a href="https://x.com/jackpxrry" target="_blank" rel="noreferrer nofollow"><img src="assets/img/cta/twitter.svg"
-                            alt="CTA Twitter" class="hero-icon"></a>
+                    <a href="https://discord.com/users/324596012955992065" target="_blank"
+                        rel="noreferrer nofollow"><img src="assets/img/cta/discord.svg" alt="CTA Discord"
+                            class="hero-icon"></a>
+                    <a href="mailto:hello@jackperry.co" target="_blank" rel="noreferrer nofollow"><img
+                            src="assets/img/cta/mail.svg" alt="CTA Mail" class="hero-icon"></a>
+                    <a href="https://github.com/jsJack" target="_blank" rel="noreferrer nofollow"><img
+                            src="assets/img/cta/github.svg" alt="CTA GitHub" class="hero-icon"></a>
+                    <a href="https://x.com/jackpxrry" target="_blank" rel="noreferrer nofollow"><img
+                            src="assets/img/cta/twitter.svg" alt="CTA Twitter" class="hero-icon"></a>
                     <a href="https://www.linkedin.com/in/jxckperry/" target="_blank" rel="noreferrer nofollow"><img
                             src="assets/img/cta/linkedin.svg" alt="CTA Linkedin" class="hero-icon"></a>
                 </div>
             </div>
         </div>
 
-        <div class="flex-col" style="align-items: center; justify-content: center; align-self: center;">
-            <p class="text-verymuted larger" style="margin: 0;">Get to know me</p>
-            <i class="fa-solid fa-angle-down" style="font-size: 32px;"></i>
+        <div class="flex-col"
+            style="align-items: center; justify-content: center; align-self: center; margin-top: auto; padding-bottom: 5vh;">
+            <p class="text-verymuted larger" style="margin: 0; padding-bottom: 10px;">Get to know me</p>
+            <i class="fa-solid fa-angle-down text-col-vm anim-updown" style="font-size: 42px;"></i>
         </div>
     </div>
+
+
+
+    <script>
+        const texts = ["Software Engineer", "Web Developer", "Tech Enthusiast"]; // Array of text strings
+        const typewriterElement = document.getElementById('typewriter');
+        const typingSpeed = 100;  // Speed of typing (in milliseconds)
+        const deletingSpeed = 50; // Speed of deleting (in milliseconds)
+        const delayBetweenTexts = 1000;  // Delay between typing and deleting (in milliseconds)
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typewriter() {
+            const currentText = texts[textIndex];
+            const displayText = currentText.substring(0, charIndex);
+            typewriterElement.textContent = displayText;
+
+            if (!isDeleting) {
+                if (charIndex < currentText.length) {
+                    charIndex++;
+                    setTimeout(typewriter, typingSpeed);
+                } else {
+                    isDeleting = true;
+                    setTimeout(typewriter, delayBetweenTexts);
+                }
+            } else {
+                if (charIndex > 0) {
+                    charIndex--;
+                    setTimeout(typewriter, deletingSpeed);
+                } else {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    setTimeout(typewriter, typingSpeed);
+                }
+            }
+        }
+
+        typewriter();  // Start the typewriter effect
+    </script>
 </body>
 
 </html>

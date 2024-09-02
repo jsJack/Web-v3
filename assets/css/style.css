@@ -43,7 +43,6 @@ body {
 
 .hero-icon {
     width: 64px;
-    height: 64px;
 }
 
 .flex-col {
@@ -61,7 +60,7 @@ body {
 }
 
 .title {
-    font-size: 96px;
+    font-size: 84px;
 }
 
 .text-verymuted {
@@ -89,6 +88,13 @@ body {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.anim-updown {
+    animation-name: updown;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .typewriter {
@@ -125,5 +131,19 @@ body {
 
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
