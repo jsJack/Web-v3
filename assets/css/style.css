@@ -664,8 +664,39 @@ h3 {
         display: none;
     }
 
+    .social-cards {
+        justify-content: center;
+        height: 35vh;
+        gap: 24px;
+    }
+
     .social-card {
-        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: var(--var-color-float);
+        color: white;
+        margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        i {
+            font-size: 32px;
+            align-self: flex-start;
+            margin-right: 15px;
+        }
+
+        h3 {
+            margin: 0;
+            display: inline;
+            font-size: 32px;
+        }
     }
 }
 
