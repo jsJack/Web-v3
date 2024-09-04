@@ -10,48 +10,408 @@
     <script src="https://kit.fontawesome.com/dbf9b07e53.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="flex-col">
-    <div id="1-landing" class="fullheight dark flex-col"
-        style="align-items: center; justify-content: center; justify-content: space-between; padding-top: 10vh;">
-        <div class="flex-col">
-            <div class="flex-col" style="align-items: flex-start;">
-                <img src="assets/img/icon/wave.svg" alt="wave" style="width: 100px; margin: 0;" class="wave">
-                <div style="display: flex; margin: 0;">
-                    <h1 class="title" style="margin: 0;">Hey, I'm Jack.</h1>
-                    <p class="text-verymuted"
-                        style="margin: 0; align-self: flex-end; margin-left: 15px; padding-bottom: 25px;">(19yo,
-                        United
-                        Kingdom)</p>
+<body>
+    <div class="flex-col">
+        <div id="hero" class="fullheight dark flex-col hero">
+
+            <div class="flex-row hero-row">
+                <div class="flex-col hero-title">
+                    <img src="assets/img/icon/wave.svg" alt="wave" class="wave">
+                    <div class="flex-row">
+                        <h1 class="title">
+                            Hey, I'm <span id="title-j">J</span><span id="title-a">a</span><span
+                                id="title-c">c</span><span id="title-k">k</span>.
+                        </h1>
+                        <p class="text-verymuted subtitle">(19yo, United Kingdom)</p>
+                    </div>
                 </div>
-                <h1 class="title" style="margin: 0;"><span class="gradient" id="typewriter">Software
-                        Engineer</span><span class="typewriter typer text-col-vm">_</span></h1>
-                <div class="flex-row hero-links" style="align-self: center; padding-top: 45px;">
-                    <a href="https://discord.com/users/324596012955992065" target="_blank"
-                        rel="noreferrer nofollow"><img src="assets/img/cta/discord.svg" alt="CTA Discord"
-                            class="hero-icon"></a>
-                    <a href="mailto:hello@jackperry.co" target="_blank" rel="noreferrer nofollow"><img
-                            src="assets/img/cta/mail.svg" alt="CTA Mail" class="hero-icon"></a>
-                    <a href="https://github.com/jsJack" target="_blank" rel="noreferrer nofollow"><img
-                            src="assets/img/cta/github.svg" alt="CTA GitHub" class="hero-icon"></a>
-                    <a href="https://x.com/jackpxrry" target="_blank" rel="noreferrer nofollow"><img
-                            src="assets/img/cta/twitter.svg" alt="CTA Twitter" class="hero-icon"></a>
-                    <a href="https://www.linkedin.com/in/jxckperry/" target="_blank" rel="noreferrer nofollow"><img
-                            src="assets/img/cta/linkedin.svg" alt="CTA Linkedin" class="hero-icon"></a>
+            </div>
+
+            <div class="flex-row hero-row">
+                <div class="flex-col hero-title">
+                    <h1 class="title large">
+                        <span class="gradient" id="typewriter"></span>
+                        <span class="typewriter typer text-col-vm">_</span>
+                    </h1>
                 </div>
+            </div>
+
+            <div class="flex-col cta">
+                <div class="flex-row hero-links">
+                    <a class="icon-link" href="https://discord.com/users/324596012955992065" target="_blank"
+                        rel="noreferrer nofollow">
+                        <div class="hero-icon">
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                    </a>
+                    <a class="icon-link" href="mailto:hello@jackperry.co" target="_blank" rel="noreferrer nofollow">
+                        <div class="hero-icon">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                    </a>
+                    <a class="icon-link" href="https://github.com/jsJack" target="_blank" rel="noreferrer nofollow">
+                        <div class="hero-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </a>
+                    <a class="icon-link" href="https://x.com/jackpxrry" target="_blank" rel="noreferrer nofollow">
+                        <div class="hero-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                    </a>
+                    <a class="icon-link" href="https://www.linkedin.com/in/jxckperry/" target="_blank"
+                        rel="noreferrer nofollow">
+                        <div class="hero-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <h3 class="text-verymuted larger cta-text"><b>Get to know me</b></h3>
+                <a href="#aboutme"><i class="fa-solid fa-angle-down text-col-vm anim-updown"></i></a>
             </div>
         </div>
 
-        <div class="flex-col"
-            style="align-items: center; justify-content: center; align-self: center; margin-top: auto; padding-bottom: 5vh;">
-            <p class="text-verymuted larger" style="margin: 0; padding-bottom: 10px;">Get to know me</p>
-            <i class="fa-solid fa-angle-down text-col-vm anim-updown" style="font-size: 42px;"></i>
+        <div id="aboutme" class="fullheight darker flex-col">
+            <img src="assets/img/waves/first.svg" alt="pagebreak-wave" class="pagebreak-wave darker">
+
+            <div class="flex-row aboutme-content">
+                <div class="flex-col aboutme-text">
+                    <h1 class="title gradient">About me</h1>
+                    <p>Hey there, I'm Jack! I'm a 19 year old software developer
+                        from England 🏴󠁧󠁢󠁥󠁮󠁧󠁿
+                    </p>
+                    <p>
+                        I specialise in Web Backend; but have skills in Web Frontend, Systems Administration,
+                        Discord Bot Development, Project
+                        Planning & Management, Writing, and much more.
+                    </p>
+                    <p class="text-mb-none">
+                        My journey here started nearly 5 years ago, with a start in Minecraft server setup and
+                        configuration and swiftly moved
+                        to System Administration & Web Backend, with my most recent addition being Web Frontend.
+                    </p>
+                    <span class="text-verymuted">(My most recent project was this website!)</span>
+                    <p>
+                        I'm currently sharpening my Web Frontend skills and learning Ruby on Rails, following along
+                        with The Odin Project.
+                    </p>
+
+                    <p>
+                        Check out some of my projects here: <a href="#portfolio"><button>My portfolio</button></a>
+                        <br />
+                        Want to work with me? <a href="#contact"><button>Contact me</button></a>
+                    </p>
+                </div>
+                <img src="assets/img/me.png" class="aboutme">
+            </div>
+
+            <div class="flex-row nextsec-action ns-mt-5">
+                <a href="#projects"><i class="fa-solid fa-angle-down text-col-vm anim-updown"></i></a>
+                <h3 class="text-col-vm">See my projects</h3>
+            </div>
+        </div>
+
+        <div id="projects" class="fullheight dark flex-col">
+            <img src="assets/img/waves/second.svg" alt="pagebreak-wave" class="pagebreak-wave dark">
+
+            <div class="flex-col">
+                <div class="projects-title">
+                    <h1 class="title gradient">My Projects</h1>
+                    <p class="padding">Check out some of my active projects below. You should join their respective Discords and keep up
+                        to date with my work!</p>
+                </div>
+
+                <div class="flex-row project-row">
+                    <div class="project-card flex-col">
+                        <img src="./assets/img/projects/starbite.png" alt="Starbite" class="project-img">
+                        <h1 class="gradient project-title">Starbite Labs</h1>
+                        <p>Starbite Labs is a community focussed project I founded in December 2023. We're working to
+                            create some of the best and
+                            feature-rich Discord bots there are, with no paywall limitations.</p>
+                        <button class="project-cta">Check out Starbite Labs</button>
+                        <div class="flex-row project-links">
+                            <a class="project-link" href="https://starbite.io" target="_blank"
+                                rel="noreferrer nofollow">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                            </a>
+                            <a class="project-link" href="https://discord.gg/starbite" target="_blank"
+                                rel="noreferrer nofollow">
+                                <div class="project-icon">
+                                    <i class="fa-brands fa-discord"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card flex-col">
+                        <img src="./assets/img/projects/sfoasis.png" alt="Starbite" class="project-img">
+                        <h1 class="gradient project-title">StoryFire: Oasis</h1>
+                        <p>StoryFire: Oasis is a next-generation Minecraft Socialverse set to release in Q4 2024.
+                            Featuring properties, businesses,
+                            minigames, in-world events and much more; the limitations are endless with StoryFire: Oasis.
+                        </p>
+                        <button class="project-cta">Check out StoryFire: Oasis</button>
+                        <div class="flex-row project-links">
+                            <a class="project-link" href="https://oasis.storyfire.com" target="_blank"
+                                rel="noreferrer nofollow">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                            </a>
+                            <a class="project-link" href="https://discord.gg/storyfire" target="_blank"
+                                rel="noreferrer nofollow">
+                                <div class="project-icon">
+                                    <i class="fa-brands fa-discord"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card flex-col">
+                        <img src="./assets/img/projects/rushnode.png" alt="Starbite" class="project-img">
+                        <h1 class="gradient project-title">RushNode Hosting</h1>
+                        <p>RushNode Hosting is a budget and premium cloud hosting provider in all areas of the web. With
+                            expert support and a 99.9%
+                            current uptime, you’re sure to never miss a click or tick.</p>
+                        <button class="project-cta">Check out RushNode Hosting</button>
+                        <div class="flex-row project-links">
+                            <a class="project-link" href="https://rushnode.net" target="_blank"
+                                rel="noreferrer nofollow">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                            </a>
+                            <a class="project-link" href="https://discord.gg/rushnode" target="_blank"
+                                rel="noreferrer nofollow">
+                                <div class="project-icon">
+                                    <i class="fa-brands fa-discord"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-row nextsec-action ns-mt-auto">
+                <a href="#portfolio"><i class="fa-solid fa-angle-down text-col-vm anim-updown"></i></a>
+                <h3 class="text-col-vm">Check out my portfolio</h3>
+            </div>
+        </div>
+
+        <div id="portfolio" class="fullheight darker flex-col">
+            <img src="assets/img/waves/third.svg" alt="pagebreak-wave" class="pagebreak-wave darker">
+
+            <div class="flex-col">
+                <div class="projects-title">
+                    <h1 class="title gradient">My Portfolio</h1>
+                    <p>Here's some of the projects I've worked on over the
+                        years... <!-- <span class="text-col-vm"><b>(Hover over an image to learn more!)</b></span> -->
+                    </p>
+
+                    <div class="flex-row portfolio-picker">
+                        <p class="text-col-vm"><a class="gradient" onclick="pickPortfolio('all')">Show all</a></p>
+                        <p class="text-col-vm"><a onclick="pickPortfolio('pmg')">Project Management</a></p>
+                        <p class="text-col-vm"><a onclick="pickPortfolio('sys')">Systems Administration</a></p>
+                        <p class="text-col-vm"><a onclick="pickPortfolio('web')">Web Design / Development</a></p>
+                        <p class="text-col-vm"><a onclick="pickPortfolio('discord')">Discord Bot Development</a></p>
+                        <p class="text-col-vm"><a onclick="pickPortfolio('writing')">Writing / Support</a></p>
+                        <p class="text-col-vm"><a onclick="pickPortfolio('mc')">Minecraft Servers</a></p>
+                    </div>
+
+                    <div class="image-grid">
+                        <img data-type="pmg,sys,discord,mc" src="./assets/img/portfolio/sf_oasis.png"
+                            alt="StoryFire Oasis">
+                        <img data-type="pmg,discord" src="./assets/img/portfolio/pixel.png" alt="Pixel Projects">
+                        <img data-type="pmg,sys,web,discord,writing" src="./assets/img/portfolio/rushnode.png"
+                            alt="RushNode Hosting">
+                        <img data-type="pmg,sys" src="./assets/img/portfolio/personal_sysadmin_mg.png"
+                            alt="Personal SysAdmin and Management">
+                        <img data-type="writing" src="./assets/img/portfolio/freelance_writing.png"
+                            alt="Freelance Writing">
+                        <img data-type="writing" src="./assets/img/portfolio/versatilenode.png" alt="VersatileNode">
+                        <img data-type="writing" src="./assets/img/portfolio/kore_dev.png" alt="Kore Development">
+                        <img data-type="web,discord" src="./assets/img/portfolio/freelance_development.png"
+                            alt="Freelance Development">
+                        <img data-type="web,discord,sys" src="./assets/img/portfolio/protangst_secure.png"
+                            alt="Protagnst Secure">
+                        <img data-type="discord" src="./assets/img/portfolio/djs14.png" alt="Discord.js v14">
+                        <img data-type="writing" src="./assets/img/portfolio/sparked.png" alt="Sparked Host">
+                        <img data-type="pmg,sys,web,discord,writing" src="./assets/img/portfolio/personal_projects.png"
+                            alt="Personal Projects">
+                        <img data-type="mc" src="./assets/img/portfolio/protagnst_events.png" alt="Protagnst Events">
+                        <img data-type="discord" src="./assets/img/portfolio/kraken.png" alt="Kraken Discord Bot">
+                        <img data-type="pmg,sys,web,discord" src="./assets/img/portfolio/starbite.png"
+                            alt="Starbite Labs">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-row nextsec-action ns-mt-5">
+                <a href="#contact"><i class="fa-solid fa-angle-down text-col-vm anim-updown"></i></a>
+                <h3 class="text-col-vm">Contact me</h3>
+            </div>
+        </div>
+
+        <div id="contact" class="fullheight dark flex-col">
+            <img src="assets/img/waves/fourth.svg" alt="pagebreak-wave" class="pagebreak-wave dark">
+
+            <div class="flex-col">
+                <div class="projects-title">
+                    <h1 class="title gradient">Contact me</h1>
+                    <p class="contactme padding">Want to work with me? Have a project in mind? Or
+                        just want to chat? Feel free to reach out to me using the methods below!</p>
+
+                    <div class="flex-row contact-content just-c">
+                        <div class="contact-method flex-col">
+                            <h1 class="gradient text-a-c">Send me an E-Mail</h1>
+                            <form class="flex-col" method="post">
+                                <label for="name" class="form-label">YOUR NAME</label>
+                                <input class="contact-form-input" type="text" id="name" name="name" required>
+
+                                <label for="email" class="form-label">SUBJECT</label>
+                                <input class="contact-form-input" type="text" id="subject" name="subject" required>
+
+                                <label for="message" class="form-label">YOUR MESSAGE</label>
+                                <textarea class="contact-form-input textarea" id="message" name="message"
+                                    required></textarea>
+
+                                <button onclick="submitEmailForm(this)" class="contact-form-submit">Send E-Mail</button>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="contact-method flex-col">
+                            <h1 class="gradient text-a-c padding">Connect with me on Social Media</h1>
+
+                            <div class="flex-col social-cards">
+                                <div class="social-card flex-row">
+                                    <a href="https://discord.com/users/324596012955992065" target="_blank"
+                                        rel="noreferrer nofollow" class="social-link">
+                                        <i class="fa-brands fa-discord"></i>
+                                        <h3 class="social-title">Discord: @js.jack</h3>
+                                    </a>
+                                </div>
+
+                                <div class="social-card flex-row">
+                                    <a href="https://linkedin.com/in/jxckperry" target="_blank"
+                                        rel="noreferrer nofollow" class="social-link">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <h3 class="social-title">Linkedin: @jxckperry</h3>
+                                    </a>
+                                </div>
+
+                                <div class="social-card flex-row">
+                                    <a href="https://x.com/jackpxrry" target="_blank"
+                                        rel="noreferrer nofollow" class="social-link">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                        <h3 class="social-title">X: @jackpxrry</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-row nextsec-action ns-mt-auto">
+                        <a href="#hero"><i class="fa-solid fa-angle-up text-col-vm anim-updown mt-2"></i></a>
+                        <h3 class="text-mt-none"><a href="#hero" class="text-col-vm text-dec-none">Thanks for visiting! (Back to top)</a></h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-
-
     <script>
-        const texts = ["Software Engineer", "Web Developer", "Tech Enthusiast"]; // Array of text strings
+        function submitEmailForm(el) {
+            let form = el.parentElement;
+            let name = form.querySelector('#name').value;
+            let subject = form.querySelector('#subject').value;
+            let message = form.querySelector('#message').value;
+
+            if (!name || !subject || !message) return;
+
+            window.open(`mailto:hello@jackperry.co?subject=${name} - ${subject}&body=${message}`, '_blank');
+
+
+            // set url back to /
+            window.history.pushState({}, document.title, "/#contact");
+        }
+    </script>
+
+    <script> // Portfolio picker script
+        function pickPortfolio(type) {
+            let elList = document.querySelectorAll('.image-grid img');
+
+            elList.forEach((el) => {
+                let types = el.getAttribute('data-type').split(',');
+
+                if (types.includes(type) || type === 'all') {
+                    // Remove dimming for images in the selected category
+                    el.classList.remove('dimmed');
+                } else {
+                    // Apply dimming effect for images not in the selected category
+                    el.classList.add('dimmed');
+                }
+            });
+
+            // Update the active category link
+            let allEl = document.querySelectorAll('.portfolio-picker p a');
+            allEl.forEach((el) => {
+                el.classList.remove('gradient');
+                el.classList.add('text-col-vm');
+            });
+
+            let clickedEl = document.querySelector(`.portfolio-picker p a[onclick="pickPortfolio('${type}')"]`);
+            clickedEl.classList.add('gradient');
+            clickedEl.classList.remove('text-col-vm');
+        }
+    </script>
+
+    <script> // Icon hover script
+        window.addEventListener('DOMContentLoaded', () => {
+            let elList = document.querySelectorAll('.icon-link');
+
+            elList.forEach((el) => {
+                addEvList(el);
+            });
+
+            let otherElList = document.querySelectorAll('.project-link');
+            otherElList.forEach((el) => {
+                addEvList(el);
+            });
+
+            function addEvList(el) {
+                el.addEventListener('mouseover', () => {
+                    // slightly scale up the icon on hover
+                    el.style.transition = 'transform 0.2s ease-in-out';
+                    el.style.transform = 'scale(1.1)';
+
+                    // get the .div.i element inside the .icon-link element
+                    let icon = el.querySelector('.hero-icon i');
+                    if (!icon) icon = el.querySelector('.project-icon i');
+                    let color = el.getAttribute('data-icon-color') || '#fff';
+
+                    // change the color of the icon on hover
+                    icon.style.transition = 'color 0.2s ease-in-out';
+                    icon.style.color = color;
+                });
+
+                el.addEventListener('mouseout', () => {
+                    el.style.transform = 'scale(1)';
+
+                    let icon = el.querySelector('.hero-icon i');
+                    if (!icon) icon = el.querySelector('.project-icon i');
+                    // undo the color change (back to --var-color-text-muted)
+                    icon.style.color = 'var(--var-color-text-muted)';
+                });
+            }
+        });
+    </script>
+
+    <script> // Typewriter script
+        const texts = ["Software Engineer", "Systems Administrator", "Project Manager", "Tech Enthusiast"]; // Array of text strings
+        // const texts = ["This is literally the longest title you could ever read"]
         const typewriterElement = document.getElementById('typewriter');
         const typingSpeed = 100;  // Speed of typing (in milliseconds)
         const deletingSpeed = 50; // Speed of deleting (in milliseconds)
@@ -85,7 +445,60 @@
             }
         }
 
-        typewriter();  // Start the typewriter effect
+        typewriter();
+    </script>
+
+    <script> // Easter Egg script
+        // when you click title-j, title-a, title-c, title-k it sets each respective one to a regional indicator symbol
+        document.getElementById('title-j').addEventListener('click', () => {
+            let el = document.getElementById('title-j').textContent;
+
+            // dunno why i have to refetch the element but it works
+            if (el === '🇯 ') document.getElementById('title-j').textContent = 'J';
+            else document.getElementById('title-j').textContent = '🇯 ';
+        });
+
+        document.getElementById('title-a').addEventListener('click', () => {
+            let el = document.getElementById('title-a').textContent;
+
+            if (el === '🇦 ') document.getElementById('title-a').textContent = 'a';
+            else document.getElementById('title-a').textContent = '🇦 ';
+        });
+
+        document.getElementById('title-c').addEventListener('click', () => {
+            let el = document.getElementById('title-c').textContent;
+
+            if (el === '🇨 ') document.getElementById('title-c').textContent = 'c';
+            else document.getElementById('title-c').textContent = '🇨 ';
+        });
+
+        document.getElementById('title-k').addEventListener('click', () => {
+            let el = document.getElementById('title-k').textContent;
+
+            if (el === '🇰') document.getElementById('title-k').textContent = 'k';
+            else document.getElementById('title-k').textContent = '🇰';
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetElement = document.querySelector(this.getAttribute('href'));
+
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop;
+
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    console.warn('Target element not found:', this.getAttribute('href'));
+                }
+            });
+        });
     </script>
 </body>
 
